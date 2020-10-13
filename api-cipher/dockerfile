@@ -1,0 +1,7 @@
+FROM daheralfawares/go1.15-py3-proto-alpine
+WORKDIR /go/src/app
+COPY . .
+RUN go mod init
+RUN go build -o app
+CMD ["./app"]
+

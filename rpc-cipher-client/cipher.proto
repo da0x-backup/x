@@ -1,0 +1,16 @@
+syntax = "proto3";
+package main;
+option go_package = "main";
+message CipherRequest {
+    string name = 1;
+    int32 id = 2;
+    string email = 3;
+}
+
+message CipherResponse {
+    string body = 1;
+}
+
+service CipherService {
+    rpc Encode(CipherRequest) returns (CipherResponse) {}
+}

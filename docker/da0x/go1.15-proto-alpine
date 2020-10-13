@@ -1,0 +1,5 @@
+FROM golang:1.15-alpine
+RUN apk add git
+RUN apk add protoc
+RUN go get google.golang.org/protobuf/cmd/protoc-gen-go
+RUN go install google.golang.org/protobuf/cmd/protoc-gen-go
