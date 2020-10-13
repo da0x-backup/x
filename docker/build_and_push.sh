@@ -1,4 +1,4 @@
-docker build -f daheralfawares/go1.15-py3-proto-alpine -t daheralfawares/go1.15-py3-proto-alpine daheralfawares/
-docker build -f daheralfawares/go1.15-proto-alpine -t daheralfawares/go1.15-proto-alpine daheralfawares/
-docker push daheralfawares/go1.15-py3-proto-alpine
-docker push daheralfawares/go1.15-proto-alpine
+docker build -f da0x/go1.15-py3-proto-alpine -t da0x/go1.15-py3-proto-alpine da0x/
+docker build -f da0x/go1.15-proto-alpine -t da0x/go1.15-proto-alpine da0x/
+docker push da0x/go1.15-py3-proto-alpine
+docker push da0x/go1.15-proto-alpine

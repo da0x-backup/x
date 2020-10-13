@@ -1,4 +1,4 @@
-FROM daheralfawares/go1.15-py3-proto-alpine
+FROM da0x/go1.15-py3-proto-alpine
 WORKDIR /go/src/app
 COPY . .
 RUN protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative *.proto

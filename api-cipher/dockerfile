@@ -1,4 +1,4 @@
-FROM daheralfawares/go1.15-py3-proto-alpine
+FROM da0x/go1.15-py3-proto-alpine
 WORKDIR /go/src/app
 COPY . .
 RUN go mod init

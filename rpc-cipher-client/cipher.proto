@@ -1,6 +1,6 @@
 syntax = "proto3";
 package main;
-option go_package = "main";
+option go_package = ".;main";
 message CipherRequest {
     string name = 1;
     int32 id = 2;

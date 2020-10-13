@@ -1,0 +1,13 @@
+version: "3"
+services:
+  cipher.api:
+    build: ./api-cipher
+    expose: [8080]
+
+  cipher.rpc:
+    build: ./rpc-cipher
+    expose: [8080]
+
+  cipher.bot:
+    build: ./rpc-cipher-client
+
